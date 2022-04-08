@@ -1,0 +1,11 @@
+# exclude folder
+node_modules/
+
+# exclude files
+.psd
+.ai
+.hwp
+.xls
+.mp3
+.mov
+.mp4
