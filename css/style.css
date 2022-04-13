@@ -21,7 +21,7 @@ a, a:link {
 }
 body {
     background: #fcf9ee;
-    font: 14px/1.5 "Noto Sans KR";
+    font: 12px/1.5 "Noto Sans KR";
     color: #000;
 }
 /* ==================header===================== */
@@ -30,6 +30,7 @@ body {
     height: 70px;
     margin: 0 auto;
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,52 +53,7 @@ body {
 .icon-links li {
     margin: 0 20px;
 }
-.top-link {
-    font-size: 14px;
-    display: flex;
-    column-gap: 5px;
-    margin: 30px;
-}
-/* ==================gift page===================== */
-#perfect-gift h2 {
-    font-size: 2rem;
-    margin: 50px 0 20px 0;
-}
-#perfect-gift p {
-    width: 655px;
-    margin: 30px auto;
-    margin-bottom: 100px;
-    font-size: 16px;
-}
-/* ==================scentfinder page===================== */
-#scent-finder h2 {
-    font-size: 2rem;
-    margin: 50px 0 0 0;
-}
-#scent-finder p {
-    width: 510px;
-    margin: 30px auto;
-    font-size: 16px;
-}
-#scent-finder button {
-    width: 120px;
-    background: #000;
-    color: white;
-    padding: 15px 0;
-    font-size: 14px;
-    margin: 0 0 50px 0;
-}
-/* ==================personal page===================== */
-#personal h2 {
-    font-size: 2rem;
-    margin: 50px 0 0 0;
-}
-#personal p {
-    width: 650px;
-    margin: 20px auto;
-    font-size: 16px;
-}
-/* ==================hero===================== */
+/* ==================hero=================== */
 .hero {
     display: flex;
     justify-content: center;
@@ -107,267 +63,165 @@ body {
 .hero img {
     width: 100%;
 }
-#scent-hero img {
-    width: 100%;
-    height: 400px;
-    margin: 0 0 100px 0;
-}
-#personal-hero {
-    width: 100%;
-    height: 400px;
-    margin: 100px 0;
-}
-/* ==================section===================== */
-.limit-wrap {
-    display: flex;
-    justify-content: center;
-    column-gap: 50px;
-    margin: 150px 0;
-}
-.limit-item-wrap {
-    display: block;
-}
-.limit-wrap img {
-    width: 480px;
-    height: 490px;
-    margin: 0 30px;
-}
-#limit-name {
-    text-align: center;
-}
-#limit-name p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.limit-ad img {
-    width: 480px;
-    height: 500px;
-    margin: 30px;
-}
-.archive {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.archive img {
-    width: 100%;
-}
-#archivecollection {
-    margin: 20px 0 50px 0;
-}
-#archivecollection p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.travel-town {
-    display: flex;
-    justify-content: center;
-    column-gap: 50px;
-    margin: 150px 0;
-}
-.travel-town img {
-    width: 480px;
-    height: 500px;
-    margin: 30px;
-}
-#travelduo p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-#towncollection p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.main-carousel h3 {
-    font-size: 2rem;
-    margin: 50px 0;
-}
-#itemline {
-    display: flex;
-    justify-content: space-around;
-}
-#itemline img {
-    width: 200px;
-    height: 250px;
-}
-.carousel-item1 {
-    display: block;
-}
-.summer-aroma {
-    display: flex;
-    justify-content: center;
-    column-gap: 50px;
-    margin: 200px 0;
-}
-.summer-aroma img {
-    width: 480px;
-    height: 500px;
-    margin: 30px;
-}
-#summer p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-#aroma p:first-child {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-/* ==================gift section===================== */
-.gift-carousel {
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-    margin: 150px 0;
-}
-.gift-carousel img {
-    width: 200px;
-}
-.gift-side-wrap {
-    max-width: 1200px;
-    margin: 50px auto;
-    font-size: 1.5em;
-}
-.gift-side1 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #bdbdbd;
-    padding: 40px 0;
-}
-.gift-side2 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #bdbdbd;
-    padding: 40px 0;
-}
-.gift-side3 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #bdbdbd;
-    padding: 40px 0;
-}
-.gift-side4 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #bdbdbd;
-    padding: 40px 0;
-}
-.viewbtn {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-}
-.more{
-    width: 140px;
-    background: #000;
-    color: white;
-    padding: 15px 0;
-    font-size: 14px;
-}
-.memorygift-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.memorygift {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-.memorygift-wrap p {
-    margin: 20px 0;
-}
-.finder-wrap {
-    max-width: 1200px;
-    margin: 200px auto;
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-}
-.finder-wrap img {
-    width: 550px;
-    height: 400px;
-    margin: 30px;
-}
-.gift-finder p{
-    margin: 0 30px 30px;
-}
-.scent-finder p{
-    margin: 0 30px 30px;
-}
-.finder-name {
-    font-size: 1.5rem;
-}
-.finder-sub {
-    font-size: 16px;
-}
-/* ==================scentfinder section===================== */
-#scent-finder-sum {
-    width: 700px;
-    margin: 0 auto;
-    margin-bottom: 300px;
-}
-#scent-finder-sum p:first-child {
-    font-size: 2rem;
-    margin: 30px;
-}
-/* ==================personal section===================== */
-.giftfinder-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #bdbdbd;
-    max-width: 1100px;
-    margin: 100px auto;
-}
-.giftfinder-box img {
-    width: 500px;
-    height: 480px;
-}
-.box-text p:first-child {
-    font-size: 1.5rem;
-}
-.box-text p {
-    margin: 20px;
-}
-.colorcap-items {
-    display: flex;
-}
+  
+/* ==================colorcap=================== */
+.colorcap-h2{
+        font-size: 2rem;
+        margin: 50px 0 0 0;
+    }
+#colorcap p {
+        width: 650px;
+        margin: 20px auto;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+.colorcap-items, .colorcap-items-2 {
+        display: flex;
+        margin-left: 450px;
+        padding-top: 50px;
+    }
 .colorcap-items img {
-    width: 300px;
-
+        width: 300px;
+    }
+.colorcap-items-2 img {
+        width: 300px;
+    }
+.colorcap-items .text-center {
+    font-size: 13px;
+    line-height: 24px;
+    color: #1c1c1c;
+    -webkit-text-size-adjust: 100%;
 }
+.colorcap-items-2 .text-center {
+    font-size: 13px;
+    line-height: 24px;
+    color: #1c1c1c;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ==================text=================== */
+.story1 {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: inherit;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.story2 {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    height: 100%;
+    box-sizing: inherit;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.text-title {
+    width: 500px;
+}
+
+.text-title {
+    font-size: 24px;
+    line-height: 1.33333;
+    padding-left: 300px;
+    padding-right: 400px;
+}
+.body-text {
+    box-sizing: inherit;
+    font-size: 14px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.text-title2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 50px 0 0 0;
+    padding-top: 20px;
+}
+.body-text2 {
+    display: flex;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 300px;
+    font-size: 16px;
+    padding-bottom: 50px; 
+    padding: 60px;
+}
+.text1, .text2 {
+    padding-left: 150px;
+}
+.story-item {
+    
+    font-size: 24px;    
+    letter-spacing: .01em;
+    line-height: 1.33333;
+}
+.new-item {
+    font-size: 13px;
+    line-height: 24px;
+    color: #1c1c1c;
+    -webkit-text-size-adjust: 100%;
+}
+.new-item img {
+    display: block;
+    cursor: pointer;
+    margin-left: 885px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 300px;
+}
+.new-item {
+    padding-bottom: 100px;
+}
+/* ==================preview===================== */
+.preview {
+    background: 0 0;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #1c1c1c;
+    text-align: center;
+    border: 1px solid #e2e1d7;
+    width: 128px;
+    border-radius: unset;
+    height: 40px;
+    overflow: hidden;
+    text-transform: lowercase;
+    display: block;
+    margin: 0 auto;
+}
+
 /* ==================aside===================== */
 #aside-wrap {
-    max-width: 1200px;
     height: 70px;
     display: flex;
     justify-content: center;
     margin: 100px 0;
 }
-.aside1, .aside2 {
+.aside1 {
     border-right: 1px solid #bdbdbd;
-    padding: 0 50px;
+    padding: 0 80px;
 }
-#aside-wrap p:first-child {
+.aside1 p:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.aside2 {
+    border-right: 1px solid #bdbdbd;
+    padding: 0 80px;
+}
+.aside2 p:first-child {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .aside3 {
-    padding: 0 50px;
+    padding: 0 80px;
 }
-/* ==================terms-of-use===================== */
-#use-wrap {
-    display: flex;
-    justify-content: center;
-    column-gap: 150px;
-    margin: 100px 0;
-}
-.use-cs li{
-    margin: 50px 0;
-}
-.termsofuse {
-    width: 830px;
-}
-.termsofuse h3 {
-    font-size: 2rem;
-    margin: 30px 0;
+.aside3 p:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 /* ==================footer===================== */
 .footer {
