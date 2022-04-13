@@ -33,13 +33,30 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.header-nav ul {
-    display: flex;
-    justify-content: space-around;
+.nav ul {
+    display: inline-block;
+    column-gap: 30px;
     font-size: 14px;
 }
-.header-nav li {
-    margin-right: 20px;
+.nav li {
+    position: relative;
+}
+.nav li a {
+    display: block;
+}
+.nav li a:hover {
+    text-decoration: underline;
+}
+.nav li a:hover .submenu {
+    display: none;
+    position: absolute;
+}
+.submenu1 {
+    display: block;
+}
+.nav li a:hover .submenu li{
+    width: 100%;
+    display: block;
 }
 .logo img {
     width: 120px;
@@ -327,18 +344,18 @@ body {
 .box-text p {
     margin: 20px;
 }
-.colorcap {
+.personal-colorcap {
     max-width: 1200px;
     display: block;
     margin: 0 100px;
 }
-.colorcap p:first-child {
+.personal-colorcap p:first-child {
     font-size: 1.5rem;
 }
-.colorcap p {
+.personal-colorcap p {
     margin: 20px 0 0 0;
 }
-.colorcap-items {
+.personal-colorcap-items {
     display: flex;
     justify-content: center;
     column-gap: 20px;
