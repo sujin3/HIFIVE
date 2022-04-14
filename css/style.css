@@ -36,7 +36,7 @@ header {
 }
 header nav {
     float: left;
-    width: 500px;
+    width: 400px;
     position: relative;
 }
 nav ul.gnb {
@@ -376,7 +376,7 @@ nav ul.gnb > li > ul.submenu > li >a {
     column-gap: 20px;
     margin: 0 0 300px 0;
 }
-.colorcap-items img {
+.personal-colorcap-items img {
     width: 300px;
 }
 .colorcap-items p {
