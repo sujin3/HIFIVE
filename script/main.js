@@ -1,13 +1,8 @@
 $(document).ready(function(){
-
-	$('.nav .submenu1').hide();
-
-	$('.nav li a').mouseover(function(){
-		$('.submenu1').slideDown();
-
-	});
-	$('.nav li a').mouseleave(function(){
-		$('.submenu1').hide();
+	$("nav ul.gnb > li").hover(function(){
+		$("ul.submenu").stop().slideDown();
+	},function(){
+		$("ul.submenu").stop().slideUp();
 	});
 });
 /* $(function () {
@@ -25,3 +20,9 @@ $(document).ready(function(){
                 }
             });
         }) */
+
+/* $(document).ready(function(){
+	$('.hero').bxSlider({
+		mode: 'fade'
+	});
+  }); */
