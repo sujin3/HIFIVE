@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,32 +20,51 @@
     <h1 class="d-none">조 말론 런던 홈페이지</h1>
     <header>
         <h2 class="d-none">브랜드 로고와 내비게이션</h2>
-        <div class="header-wrap">
-            <nav>
-                <h3 class="d-none">내비게이션</h3>
-                <div class="header-nav">
-                    <ul>
-                        <li><a href="#">쇼핑하기</a></li>
-                        <li><a href="#">선물하기</a></li>
-                        <li><a href="#">조 말론 런던 하우스</a></li>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">쇼핑하기</a>
+                    <ul class="submenu">
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">베스트셀러</a></li>
+                        <li><a href="#">센트</a></li>
                     </ul>
-                </div>
-            </nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="jomalone header-logo">
-            </div>
-            <div class="icon-links">
-                <ul>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
-                    <li><a href="/basket.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                </ul>
-            </div>
+                </li>
+                <li>
+                    <a href="#">선물하기</a>
+                    <ul class="submenu">
+                        <li><a href="/gift.html">선물</a></li>
+                        <li><a href="#">기프트파인더</a></li>
+                        <li><a href="/scent-finder.html">센트파인더</a></li>
+                        <li><a href="/personal.html">퍼스널라이제이션</a></li>
+                        <li><a href="/">컬러 캡</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">조 말론 런던 하우스</a>
+                    <ul class="submenu">
+                        <li><a href="#">조 말론 런던의 가치</a></li>
+                        <li><a href="#">스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="jomalone header-logo">
+        </div>
+        <div class="icon-links">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i></a></li>
+                <li><a href="/basket.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
         </div>
     </header>
     <div class="hero">
-        <img src="/images/main-hero.jpg" alt="메인히어로이미지">
+        <div><img src="/images/main-hero.jpg" alt="메인히어로이미지"></div>
+  <!--       <div><img src="/images/main-hero2.png" alt="메인히어로이미지"></div>
+        <div><img src="/images/main-hero3.png" alt="메인히어로이미지"></div> -->
     </div>
     <section id="main">
         <h2 class="d-none">메인상품과 광고이미지</h2>
@@ -80,7 +100,7 @@
             <div class="travel-town">
                 <div class="travel">
                     <img src="images/main-travel_600x660.jpg" alt="트래블코롱듀오">
-                    <div id="travelduo"class="text-center">
+                    <div id="travelduo" class="text-center">
                         <p>트래블 코롱 듀오</p>
                         <p class="text-line">더 알아보기</p>
                     </div>
@@ -138,7 +158,7 @@
                             <button class="preview">미리보기</button>
                         </div>
                     </div>
-                    <div class="carousel-item5">
+                    <!-- <div class="carousel-item5">
                         <img src="images/seaCologne50.png" alt="씨다포딜코롱50ml">
                         <div class="text-center">
                             <p>신제품</p>
@@ -157,7 +177,7 @@
                             <p>₩204,000 100ml</p>
                             <button class="preview">미리보기</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </article>
@@ -203,26 +223,58 @@
         <div class="footer">
             <div class="footer-links">
                 <ul class="cs">
-                    <li><p>고객서비스</p></li>
-                    <li><p>자주 묻는 질문</p></li>
-                    <li><p>고객관리지원팀</p></li>
-                    <li><p>나의 프로필</p></li>
-                    <li><p>나의 오더</p></li>
-                    <li><p>주문 조회</p></li>
-                    <li><p>교환 및 환불 규정</p></li>
-                    <li><p>온라인 부티크 쇼핑</p></li>
+                    <li>
+                        <p>고객서비스</p>
+                    </li>
+                    <li>
+                        <p>자주 묻는 질문</p>
+                    </li>
+                    <li>
+                        <p>고객관리지원팀</p>
+                    </li>
+                    <li>
+                        <p>나의 프로필</p>
+                    </li>
+                    <li>
+                        <p>나의 오더</p>
+                    </li>
+                    <li>
+                        <p>주문 조회</p>
+                    </li>
+                    <li>
+                        <p>교환 및 환불 규정</p>
+                    </li>
+                    <li>
+                        <p>온라인 부티크 쇼핑</p>
+                    </li>
                 </ul>
                 <ul class="company">
-                    <li><p>회사 소개</p></li>
-                    <li><p>법인 정보</p></li>
-                    <li><p>법인 판매</p></li>
-                    <li><p>커리어</p></li>
+                    <li>
+                        <p>회사 소개</p>
+                    </li>
+                    <li>
+                        <p>법인 정보</p>
+                    </li>
+                    <li>
+                        <p>법인 판매</p>
+                    </li>
+                    <li>
+                        <p>커리어</p>
+                    </li>
                 </ul>
                 <ul class="sns">
-                    <li><p>소셜 네트워크</p></li>
-                    <li><p>인스타그램</p></li>
-                    <li><p>페이스북</p></li>
-                    <li><p>유튜브</p></li>
+                    <li>
+                        <p>소셜 네트워크</p>
+                    </li>
+                    <li>
+                        <p>인스타그램</p>
+                    </li>
+                    <li>
+                        <p>페이스북</p>
+                    </li>
+                    <li>
+                        <p>유튜브</p>
+                    </li>
                 </ul>
             </div>
             <div class="footer-wrap">
@@ -252,6 +304,10 @@
             </div>
         </div>
     </footer>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="script/main.js"></script>
 </body>
+
 </html>
