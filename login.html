@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조 말론 런던 공식 온라인 부티크</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="d-none">조 말론 런던 홈페이지</h1>
+    <header>
+        <h2 class="d-none">브랜드 로고와 내비게이션</h2>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">쇼핑하기</a>
+                    <ul class="submenu">
+                        <li><a href="/new.html">신제품</a></li>
+                        <li><a href="/best.html">베스트셀러</a></li>
+                        <li><a href="#">센트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">선물하기</a>
+                    <ul class="submenu">
+                        <li><a href="/gift.html">선물</a></li>
+                        <li><a href="#">기프트파인더</a></li>
+                        <li><a href="/scent-finder.html">센트파인더</a></li>
+                        <li><a href="/personal.html">퍼스널라이제이션</a></li>
+                        <li><a href="/colorcap.html">컬러 캡</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">조 말론 런던 하우스</a>
+                    <ul class="submenu">
+                        <li><a href="/story.html">조 말론 런던의 가치</a></li>
+                        <li><a href="/story2.html">스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="jomalone header-logo">
+        </div>
+        <div class="icon-links">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="/login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="/favorites.html"><i class="fa-solid fa-bookmark"></i></a></li>
+                <li><a href="/basket.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div>
+        <h2 style="text-align: center; margin-bottom: 10px;">마이페이지</h2>
+        <hr>
+    </div>
+    <section>
+        <h1 class="d-none">회원 가입</h1>
+        <div>
+            <h3>신규 고객</h3>
+        </div>
+        <div>
+            <form name="newCustomer" action="search.php" method="post" target="_blank" autocomplete="off">
+                <div>
+                    <div>
+                        <label for="userName"></label>
+                        <input id="userName" type="mail" placeholder="이름" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="userMail"></label>
+                        <input id="userMail" type="text" placeholder="이메일 주소">
+                    </div>
+                    <div>
+                        <label for="userPassword"></label>
+                        <input id="userPassword" type="password" placeholder="비밀 번호" maxlength="16">
+                    </div>
+                    <div>
+                        <input id="checkbox" type="checkbox" value="password hidden" checked> 
+                        <span>비밀번호 표시</span>
+                    </div>
+                    <div>
+                        <p style="color:tomato;">영문 대문자, 소문자, 숫자, 특수문자를 모두 조합하여 8자 이상으로<br>
+                        구성해주세요. 예시) jomalone1234</p>
+                    </div>
+                </div>
+                
+                    <h4>휴대전화 번호</h4>
+                    <div>
+                        <span>
+                            <select size="1" name="Mobile-area-code" aria-required="true" maxlength="4">
+                                <option value="choice" selected>선택</option>
+                                <option value="choice">010</option>
+                                <option value="choice">011</option>
+                                <option value="choice">016</option>
+                                <option value="choice">017</option>
+                                <option value="choice">018</option>
+                                <option value="choice">019</option>
+                            </select>
+                        </span>
+                        <span>
+                            <input type="tel" maxlength="4" aria-required="true">
+                        </span>
+                        <span>
+                            <input type="tel" maxlength="4" aria-required="true">
+                        </span>
+                    </div>
+                    <div>
+                        <input type="submit" value="인증번호 요청" style="background-color:black; color:aliceblue;">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="*인증번호">
+                    </div>
+                    <div>
+                        <input type="submit" value="인증번호 확인" style="background-color:black; color:aliceblue;">
+                    </div>
+                    
+                </div>
+                <div>
+                    <div>
+                        <h4>*이용 약관(필수)</h4>
+                        <textarea name="agreement1" cols="50" rows="10">본 약관은 2017년 04월 06일부터 시행됩니다.(이용약관) Jo Malone London Korea Online 웹사이트(이하 '본 사이트')에 >오신 것을 환영합니다. Jo Malone London Korea Online(“이하 “회사”)는 아래의 약관, 개인정보처리방침 및 고객 서비스와 특정 기능, 게시물 또는 홍보 Jo Malone London Korea Online(“이하 “회사”)는 아래의 약관, 개인정보처리방침 및 고객 서비스와 특정 기능, 게시물 또는 홍보 와 관련하여 본 사이트 전체에>서 제시하는 여타 조건과 정책 (본 약관(통칭하여, '본 약관'이라 합니다)의 일부이며 그에 포함되는 것으로 간주합니다. ※회사는 회원 가입을 만 14세 이상인 경우에 가능하도록 하며 개인정보의 수집•이용에 법정대리인의 동의가 필요한 만 14세 미만 아동의 개인정보는 원칙적으로 수집하지 않습니다.</textarea>        
+                    </div>
+                    <div>
+                        <span>
+                            <input id="agreement" type="radio" value="Y" aria-required="true">
+                            <label for="agreement">동의</label>
+                        </span>
+                        <span>
+                            <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                            <label for="agreement">동의하지 않음</label>
+                        </span>
+                    </div>
+                    <div>
+                        <h4>*개인정보의 수집 및 이용에 대한 동의(필수)</h4>
+                        <textarea name="agreement2" cols="50" rows="10">이엘씨에이한국유한회사(이하 '회사')는 다음과 같이 개인정보를 수집•이용합니다. 1. 수집하는 개인정보 항목 및 수집방법 : 회사는 본 웹사이트를 통하여 회원가입, 상담, 서비스 신청 등을 위해 아래와 같은 개인정보를 수집하고 있습니다. ο 수집항목 : 필수항목 - (회원 가입 시) 이름, 비밀번호, 핸드폰번호, 이메일 주소 - (웹사이트에서 제품 구매 시) 신용카드정보, 은행계좌정보, 결제기록, 주문기록, 주소 - (웹사이트 방문 시 자동으로 생성되어 수집되는 항목) 접속 로그, 쿠키, 접속 IP 정보 - (이메일 문의 시) 이름, 이메일 주소, 연락처 ※회사는 회원 가입을 만 14세 이상인 경우에 가능하도록 하며 개인정보의 수집•이용에 법정대리인의 동의가 필요한 만 14세 미만 아동의 개인정보는 원칙적으로 수집하지 않습니다.</textarea>        
+                    </div>
+                    <div>
+                        <span>
+                            <input id="agreement" type="radio" value="Y" aria-required="true">
+                            <label for="agreement">동의</label>
+                        </span>
+                        <span>
+                            <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                            <label for="agreement">동의하지 않음</label>
+                        </span>
+                    </div>
+                        <h4>개인정보의 취급위탁에 대한 동의(선택)</h4>
+                        <textarea name="agreement2" cols="50" rows="10">회사는 보다 나은 서비스를 제공해드리고자 다음과 같이 개인정보 처리업무를 위탁하고 있습니다. ο 위탁 대상자: ㈜에이디앤스타일 ο 위탁업무 내용: 온-오프라인 회원 등에 대한 E-DM 발송 ο 위탁 대상자: ㈜커스토머인사이트 ο 위탁업무 내용: 온-오프라인 매장에서 수집된 고객정보 분석, 해당 고객에 대한 DM 발송, SMS/MMS 등 문자메세지 발송(㈜커스토머인사이트는 상기 위탁업무 중, DM 발송업무를 ㈜유포스트에, SMS/MMS 등 문자 메시지 발송업무를 ㈜ 네이처피플에 재위탁하고 있습니다.)</textarea>        
+                    </div>
+                    <div>
+                        <span>
+                            <input id="agreement" type="radio" value="Y" aria-required="true">
+                            <label for="agreement">동의</label>
+                        </span>
+                        <span>
+                            <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                            <label for="agreement">동의하지 않음</label>
+                        </span>
+                    </div>
+                    <div>
+                        <input id="checkbox" type="checkbox" value="Y"> 
+                        <span>위 모든 항목에 동의합니다</span>
+                    </div>
+                    <div>
+                        <h4>뉴스레터 수신여부*</h4>
+                        <div>
+                            <span>
+                                <input id="agreement" type="radio" value="Y" aria-required="true">
+                                <label for="agreement">수신함</label>
+                            </span>
+                            <span>
+                                <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                                <label for="agreement">수신하지 않음</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>MMS 수신여부*</h4>
+                        <div>
+                            <span>
+                                <input id="agreement" type="radio" value="Y" aria-required="true">
+                                <label for="agreement">수신함</label>
+                            </span>
+                            <span>
+                                <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                                <label for="agreement">수신하지 않음</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>DM 수신여부*</h4>
+                        <div>
+                            <span>
+                                <input id="agreement" type="radio" value="Y" aria-required="true">
+                                <label for="agreement">수신함</label>
+                            </span>
+                            <span>
+                                <input id="disagreement" type="radio" value="N" aria-required="true" checked>
+                                <label for="agreement">수신하지 않음</label>
+                            </span>
+                        </div>
+                    </div>     
+                </div>
+            
+                <p>생일 쿠폰 코드 및 각종 이벤트 혜택은 뉴스레터, MMS, DM 수신에 동의 해주셔야 받아보실 수 있습니다.</p>
+                <br>
+                <p>* 수신 동의하는 경우, 취급 위탁에도 동의하는 것으로 간주되며 수신하지 않을 경우 마케팅 정보를 받아보실 수 없습니다.</p>
+                <input id="checkbox" type="checkbox" value="Y"> 
+                <span>*가입자 본인은 만 14세 이상입니다.</span>
+                <p>(만 14세 이상부터 회원가입이 가능합니다)</p>
+                <div>
+                    <input type="submit" value="회원 가입" style="background-color:black; color:aliceblue;">
+                </div>   
+            </form>
+        </div>    
+    </section>
+
+    <section>
+        <h1 class="d-none">로그인</h1>
+        <div>
+            <h3>기존 고객</h3>
+        </div>
+        <div>
+            <form name="login" action="search.php" method="post" target="_blank" autocomplete="off">
+                <div>
+                    <div>
+                        <label for="userMail"></label>
+                        <input id="userMail" type="text" placeholder="이메일 주소">
+                    </div>
+                    <div>
+                        <label for="userPassword"></label>
+                        <input id="userPassword" type="password" placeholder="비밀 번호" maxlength="16">
+                    </div>
+                    <div>
+                        <p>비밀번호를 잊어버리셨나요? 회원가입 시 등록해주신 이메일 주소를 입력해 주시고, <u>여기를 클릭하세요.</u></p>
+                    </div>
+                    <div>
+                        <input type="submit" value="로그인" style="background-color:black; color:aliceblue;">
+                    </div>
+    </section>
+
+
+
+    <aside>
+        <h2 class="d-none">하단메뉴</h2>
+        <div id="aside-wrap" class="text-center">
+            <div class="aside1">
+                <p>선물포장</p>
+                <p>시그니처 박스에 정성스럽게 포장해 드립니다.(*일부 품목 제외)</p>
+            </div>
+            <div class="aside2">
+                <p>샘플</p>
+                <p>조 말론 런던의 새로운 향을 경험해보세요.</p>
+            </div>
+            <div class="aside3">
+                <p>무료배송</p>
+                <p>향기로운 선물을 전달해드립니다.</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <h2 class="d-none">푸터로고와 정보</h2>
+        <div class="footer">
+            <div class="footer-links">
+                <ul class="cs">
+                    <li><p>고객서비스</p></li>
+                    <li><p>자주 묻는 질문</p></li>
+                    <li><p>고객관리지원팀</p></li>
+                    <li><p>나의 프로필</p></li>
+                    <li><p>나의 오더</p></li>
+                    <li><p>주문 조회</p></li>
+                    <li><p>교환 및 환불 규정</p></li>
+                    <li><p>온라인 부티크 쇼핑</p></li>
+                </ul>
+                <ul class="company">
+                    <li><p>회사 소개</p></li>
+                    <li><p>법인 정보</p></li>
+                    <li><p>법인 판매</p></li>
+                    <li><p>커리어</p></li>
+                </ul>
+                <ul class="sns">
+                    <li><p>소셜 네트워크</p></li>
+                    <li><p>인스타그램</p></li>
+                    <li><p>페이스북</p></li>
+                    <li><p>유튜브</p></li>
+                </ul>
+            </div>
+            <div class="footer-wrap">
+                <div class="footer-top">
+                    <div class="copyright">
+                        <p>&copy; Jo Malone London 2021</p>
+                        <p class="text-line">대한민국</p>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="/trust-mark.html"><img src="images/footer-logo.png" alt="footer-logo"></a>
+                    </div>
+                    <div class="policy">
+                        <p class="text-line"><a href="/terms-of-use.html">이용약관</a></p>
+                        <p class="text-line"><a href="/privacy.html">개인정보 처리방침</a></p>
+                    </div>
+                </div>
+                <address>
+                    <div class="footer-info">
+                        <p>이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232</p>
+                        <p>사업자등록번호: 211-81-71889</p>
+                        <p>통신판매업신고번호: 강남-15737호</p>
+                        <p>사업자정보조회</p>
+                        <p>고객관리지원팀: (02) 6971-3228 consumercare-kr@jomalone.com</p>
+                        <p>호스팅서비스 사업자: ㈜엘지유플러스</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
